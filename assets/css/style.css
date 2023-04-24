@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins';
+}
+header{
+    width: 98.75vw;
+    height: 100vh;
+    color: white;
+}
+nav{
+    width:100%;
+    height: 17.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px  ;
+    position: absolute;
+}
+nav .logo{
+width: 10%;
+height: 80%;
+}
+nav .logo img:hover{
+    cursor: pointer;
+}
+nav .logo img{
+    width: 100%;
+    height: 100%;
+}
+nav .items{
+    width: 30%;
+    height: 80%;
+}
+nav .items ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+nav .items ul a{
+text-decoration: none;
+color: white;
+}
+nav .items ul li a:hover{
+  border-bottom: 1px solid red;
+  padding-bottom: 5px;
+}
+.hero{
+height: 100%;
+background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('../images/banner.png');
+background-size: 100% 100%; 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 5%;
+}
+.hero h1{
+    font-size: 65px;
+}
+.hero .p1{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*     font-size: small;
+ */}
+.hero button{
+    width: 15%;
+    height: 7%;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(4,9,30,0.2);
+/*     font-size: small;
+ */}
+.hero button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+main{
+    width: 98.75vw;
+}
+#courses {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 5% 50px;
+}
+#courses .heading{
+width: 90%;
+height: 35%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 5px;
+}
+#courses .course{
+    width: 90%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+#courses .course div{
+    width:30%;
+    height: 100%;
+    background-color: #fff3f3;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+/*     font-size: small;
+ */}
+#courses p , #camp p , #facilities p, #opinion p , footer p{
+    color: gray;
+    text-align: center;
+     font-size: 15px;
+     padding: 5px 5px;
+ line-height: 20px;
+}
+#camp {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 4% 5%;
+    background-color: #eee;
+}
+#camp .heading{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+#camp .campphoto{
+    width: 90%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+#camp .campphoto div{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#camp .campphoto .london{
+    background-image: url('../images/london.png');
+    background-size: 100% 100%;
+}
+#camp .campphoto .newyork{
+    background-image: url('../images/newyork.png');
+    background-size: 100% 100%;
+}
+#camp .campphoto .wash{
+    background-image: url('../images/washington.png');
+    background-size: 100% 100%;
+}
+#camp .campphoto div p{
+    font-size: 25px;
+    color: white;
+    background-color:rgba(226,0,0,0) ; 
+    border: none;
+    visibility:hidden;}
+
+#camp .campphoto .london:hover{
+    background-image:linear-gradient(rgba(226,0,0,0.7),rgba(226,0,0,0.7)), url('../images/london.png');
+}
+#camp .campphoto .newyork:hover{
+    background-image:linear-gradient(rgba(226,0,0,0.7),rgba(226,0,0,0.7)), url('../images/newyork.png');
+}
+#camp .campphoto .wash:hover{
+    background-image:linear-gradient(rgba(226,0,0,0.7),rgba(226,0,0,0.7)), url('../images/washington.png');
+}
+#facilities {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 4% 8%;
+}
+#facilities .heading{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#facilities .facilite{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+#facilities .facilite div{
+    width:30%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+#facilities .facilite div .photo{
+    width: 100%;
+    height: 70%;
+}
+#facilities .facilite .lib .photo{
+    background-image: url('../images/library.png');
+    background-size: 100% 100%;
+}
+#facilities .facilite .play .photo{
+    background-image:url(../images/basketball.png) ;
+    background-size: 100% 100%;
+}
+#facilities .facilite .food .photo{
+    background-image: url('../images/banner2.jpg');
+    background-size: 100% 100%;
+}
+#facilities .facilite div p{
+    text-align: start;
+}
+#opinion{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #eee;
+}
+#opinion .heading {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#opinion .person{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#opinion .person div{
+    width: 35%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff3f3;
+}
+#opinion .person div .cl1{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#opinion .person div .cl2{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 5px;
+}
+#opinion .person div .cl1 .photo{
+    width: 80%;
+    height: 40%;
+}
+#opinion .person div .cl1 .photo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+#opinion .person div .cl2 p{
+    color: gray;
+    text-align: start;
+    font-size: smaller;
+}
+#opinion .person div .cl2 .ico{
+    color: red;
+    text-align: start;
+}
+#contact {
+    width: 100%;
+    height: 90vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/banner2.jpg');
+    background-size: 70% 65%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+}
+#contact .heading{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contact .heading .hh{
+    font-weight: bolder;
+}
+#contact button{
+    width: 10%;
+    height:8% ;
+    border: 1px solid white;
+    color: white;
+    background-color:rgba(0,0,0,0.2) ;
+}
+#contact button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+footer{
+    width:98.75vw ;
+    height: 40vh;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px 0;
+}
+footer .about{
+    width: 100%;
+    height: 20%;
+    font-weight:bolder ;
+    color: black;
+}
+footer .frame{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+footer .frame .p1{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+footer .frame .ico{
+    width: 15%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer i{
+    color: red;
+}
+footer .frame p i{
+    margin: 0 5px;
+}
+footer .frame .ico i:hover{
+    cursor: pointer;
+}
